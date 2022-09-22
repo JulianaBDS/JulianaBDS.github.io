@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    <script>
+        var qtd_eleitores = Number(prompt("Quantidade de eleitores: "))
+        var qtd_votos_brancos = Number(prompt("Votos em branco: "))
+        var qtd_votos_nulos = Number(prompt("Votos nulos: "))
+        var percentual_votos_brancos = (qtd_votos_brancos*100)/qtd_eleitores
+        var percentual_votos_nulos = (qtd_votos_nulos*100)/qtd_eleitores
+        var qtd_votos_validos = qtd_eleitores - qtd_votos_brancos - qtd_votos_nulos
+        var percentual_votos_validos = (qtd_votos_validos*100)/qtd_eleitores
+        alert(`Percentual de votos em branco: ${percentual_votos_brancos.toFixed(2)}% \n Percentual de votos nulos: ${percentual_votos_nulos.toFixed(2)}% \n Percentual de votos válidos: ${percentual_votos_validos.toFixed(2)}%`)
+    </script>
+</body>
+</html>
